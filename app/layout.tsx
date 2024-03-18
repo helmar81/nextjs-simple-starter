@@ -10,8 +10,11 @@ import React from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
+<head>
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GMMR8J03PP"></script>
 
+</head>
 
 export const metadata = {
   title: "Amazon Amplify",
