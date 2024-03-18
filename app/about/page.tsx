@@ -20,7 +20,7 @@ export default function Page() {
         />
         </div>
 
-        <div className="p-16 content-center"> </div>
+        <div className="p-0 content-center"> </div>
       </h1 ><Link href="/"  className="text-4xl p-16 content-center">Home</Link></>
      
     

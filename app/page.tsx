@@ -32,7 +32,7 @@ export default function Home() {
       <div className= "p-2 content-center">
         <Image
           className={styles.logo}
-          src="/aws.png"
+          src="/AWS.png"
           alt="aws Logo"
           width={180}
           height={137}

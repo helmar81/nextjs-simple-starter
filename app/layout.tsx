@@ -6,17 +6,13 @@ import { ThemeSwitcher } from "./components/ThemeSwitcher";
 
 import React from "react";
 
-import { GoogleAnalytics } from '@next/third-parties/google'
+
 
 
 
 const inter = Inter({ subsets: ["latin"] });
 
-<head>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GMMR8J03PP"></script>
-
-</head>
 
 export const metadata = {
   title: "Amazon Amplify",
@@ -32,13 +28,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GMMR8J03PP"></script>
+</head>
       <body
         className={`${inter.className} bg-slate-50 dark:bg-[#121f31] `}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <ThemeSwitcher />
           <main>{children}</main>
-          <GoogleAnalytics gaId="G-GMMR8J03PP" />
+         
         </ThemeProvider>
 
         
