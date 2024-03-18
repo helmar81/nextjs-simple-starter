@@ -6,6 +6,8 @@ import { ThemeSwitcher } from "./components/ThemeSwitcher";
 
 import React from "react";
 
+import { GoogleAnalytics } from '@next/third-parties/google'
+
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -36,7 +38,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <ThemeSwitcher />
           <main>{children}</main>
-          
+          <GoogleAnalytics gaId="G-GMMR8J03PP" />
         </ThemeProvider>
 
         
