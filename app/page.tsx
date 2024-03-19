@@ -15,7 +15,7 @@ export default function Home() {
     <main className={styles.main}>
   
 
-      <h1 className="text-3xl font-bold underline">
+      <h1 className="text-2xl font-bold underline">
       Hello Amazonians !
     </h1>
 
@@ -45,13 +45,7 @@ export default function Home() {
 
       <div className={styles.grid}>
 
-    
-
-     
-
-</div>
-      
-      <span> created with Amplify + NEXT.js </span>
+</div>    
       <Image
           src="/amplify.svg"
           alt="Amplify Logo"
@@ -59,7 +53,7 @@ export default function Home() {
           height={37}
           priority
         />
-     
+      <span> created with </span>
      
       <Image
           src="/next.svg"
@@ -68,10 +62,11 @@ export default function Home() {
           height={37}
           priority
         />
-       <Link href="/about">Dashboard</Link>
-    
-    </main>
 
+       
+       <Link href="/about">Dashboard</Link>
+       
+    </main>
 
 )
 }

@@ -3,8 +3,11 @@ import { Inter } from "next/font/google";
 import { ThemeProvider } from "./components/ThemeProvider";
 import { ThemeSwitcher } from "./components/ThemeSwitcher";
 
+import { GoogleTagManager } from '@next/third-parties/google'
 
 import React from "react";
+
+import {isMobile} from 'react-device-detect';
 
 
 
@@ -12,7 +15,11 @@ import React from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
-
+const styles = {
+  background: 'blue',
+  fontSize: '24px',
+  lineHeight: '2',
+};
 
 export const metadata = {
   title: "Amazon Amplify",
@@ -21,7 +28,9 @@ export const metadata = {
 };
 
 
-export default function RootLayout({
+export default function RootLayout
+(
+  {
   children,
 }: {
   children: React.ReactNode;
@@ -37,6 +46,8 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <ThemeSwitcher />
           <main>{children}</main>
+
+          <GoogleTagManager gtmId="GTM-NRMSGTD9" />
          
         </ThemeProvider>
 
