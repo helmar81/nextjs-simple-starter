@@ -10,13 +10,11 @@ import Header from "./components/Header"
 export default function Home() {
   return (
 
-
-
     <main className={styles.main}>
   
-
+<header/>
       <h1 className="text-2xl font-bold underline">
-      Hello Amazonians !
+      Hello Amazonians
     </h1>
 
     <Image
@@ -41,11 +39,25 @@ export default function Home() {
        
       </div>
 
-      <p className="p-8 content-center">I was able to create this Application</p>
+      <p className="p-2 justify-content">I was able to create this Application</p>
 
-      <div className={styles.grid}>
+    
+     
+<div className="p-12 content-center">
+       <Link href="/about" className="text-2xl underline center">Dashboard</Link>
+       </div>
 
-</div>    
+      <span className="p-2 content-center"> created with </span>
+
+      <Image
+          src="/next.svg"
+          alt="next Logo"
+          width={85}
+          height={57}
+          priority
+        />
+     
+     <span className="p-2 content-center">+ deployed on Amplify </span>
       <Image
           src="/amplify.svg"
           alt="Amplify Logo"
@@ -53,19 +65,8 @@ export default function Home() {
           height={37}
           priority
         />
-      <span> created with </span>
-     
-      <Image
-          src="/next.svg"
-          alt="Amplify Logo"
-          width={45}
-          height={37}
-          priority
-        />
 
-       
-       <Link href="/about">Dashboard</Link>
-       
+      
     </main>
 
 )

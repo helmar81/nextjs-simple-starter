@@ -1,12 +1,12 @@
+import Link from "next/link"
 import { useRouter } from "next/router"
 const Header = () => {
   const router = useRouter()
   return (
     <header>
-      <button onClick={() => router.back()}>Back</button>
-      <nav>
-        <a href="/">Home</a>
-      </nav>
+      <div className="p-8 content-center">
+       <Link href="/about">Dashboard</Link>
+       </div>
     </header>
   )
 }

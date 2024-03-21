@@ -7,6 +7,7 @@ import { data } from './data/resource.js';
 const backend = defineBackend({
   auth,
   data
+
 });
 
 const customResourceStack = backend.createStack('MyCustomResources');
