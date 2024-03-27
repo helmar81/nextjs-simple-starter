@@ -66,7 +66,14 @@ export default function Home() {
           priority
         />
 
+<div className="p-6 content-center">
+<a
       
+      href="https://uspekhi.web.app" rel="noopener"  target="_blank"  >
+     
+       Copyright © {new Date().getFullYear()} USPEKHI
+    </a>
+    </div>
     </main>
 
 )
