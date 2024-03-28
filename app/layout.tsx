@@ -5,11 +5,11 @@ import { ThemeSwitcher } from "./components/ThemeSwitcher";
 import Header from "./components/Header";
 
 
-import { GoogleTagManager } from '@next/third-parties/google'
+
 
 import React from "react";
 
-import {isMobile} from 'react-device-detect';
+
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -37,7 +37,7 @@ export default function RootLayout
   return (
     <html lang="en">
       <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GMMR8J03PP"></script>
+
 
 </head>
       <body
@@ -49,7 +49,7 @@ export default function RootLayout
           <ThemeSwitcher />
           <main>{children}</main>
           
-          <GoogleTagManager gtmId="GTM-NRMSGTD9" />
+        
          
         </ThemeProvider>
        
